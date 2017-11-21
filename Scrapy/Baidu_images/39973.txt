@@ -1,0 +1,3005 @@
+<!DOCTYPE html>
+<html id="XenForo" lang="en-US" dir="LTR" class="Public NoJs XenBase LoggedOut NoSidebar   RightSidebar  Responsive" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	
+		<base href="https://www.resource-zone.com/forum/" />
+		<script>
+			var _b = document.getElementsByTagName('base')[0], _bH = "https://www.resource-zone.com/forum/";
+			if (_b && _b.href != _bH) _b.href = _bH;
+		</script>
+	
+
+	<title>Important - 常见问题解答以及如何成为一名编辑员 | Resource-Zone</title>
+	
+	
+	<noscript><style>.JsOnly, .jsOnly { display: none !important; }</style></noscript>
+	<link rel="stylesheet" href="css.php?css=xenforo,form,public&amp;style=5&amp;dir=LTR&amp;d=1508600491" />
+	<link rel="stylesheet" href="css.php?css=bb_code,login_bar,message,message_user_info,nat_public_css,share_page,thread_view,xb,xb_message,xb_scroll_buttons,xb_social_links,xb_top_bar&amp;style=5&amp;dir=LTR&amp;d=1508600491" />
+
+
+	
+	
+		<link href='//fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	
+	
+	
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	
+	
+	
+	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-15409728-34', 'www.resource-zone.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+		<script src="js/jquery/jquery-1.11.0.min.js"></script>	
+		
+	<script src="js/xenforo/xenforo.js?_v=3b45212c"></script>
+
+
+
+<script type="text/javascript">
+jQuery(document).ready(function ($){
+
+var xbFloatHeight = $('.navFloatwrapper').outerHeight();
+var xbHeaderHeight = $('#header').outerHeight();
+
+if ($('#moderatorBar').length) {
+	var xbModeratorHeight = $('#moderatorBar').outerHeight();
+} else {
+	var xbModeratorHeight = 0;
+}
+
+var xbFloatAdjustments = xbFloatHeight  ;
+var xbStartFloat = $('.navFloatwrapper').offset().top;
+
+$(window).load(function () {
+	xbSartFloat();
+});
+		
+$(window).scroll(function (event) {
+       xbSartFloat();
+});
+		
+function xbSartFloat() {
+	if (($(window).scrollTop()) > xbStartFloat) {
+		$(".navFloatHelper").css('min-height', xbFloatHeight);
+		$('#header').addClass('fixed');
+	} else {
+		$(".navFloatHelper").css('min-height', '0');
+		$('#header').removeClass('fixed');
+	}
+}	
+
+$(window).bind("load", function() {
+    $('a[href*=#]:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top - xbFloatAdjustments //offsets for fixed header
+                }, 1);
+                return false;
+            }
+        }
+    });
+    //Executed on page load with URL containing an anchor tag.
+    if ($(location.href.split("#")[1])) {
+        var target = $('#' + location.href.split("#")[1]);
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top - xbFloatAdjustments //offset height of header here too.
+            }, 1);
+            return false;
+        }
+    }
+});
+
+});
+
+</script>
+
+
+
+
+
+
+
+<script type='text/javascript'>
+$(function() {
+    $('.xbOffCanvasToggle').on('click', function() {
+        $('.xbOffCanvasContainer').toggleClass("marginLeft");
+    });
+    
+    $('.xbOffCanvasSidebarToggle').on('click', function() {
+        $('.xbOffCanvasContainer').toggleClass("marginRight");
+    });
+    
+    $('.xbOffCanvasMask').on('click', function() {
+        $('.xbOffCanvasContainer').removeClass("marginLeft marginRight");
+    });
+
+    $('.publicTabs li').has('.xbOffCanvasSubMenu').prepend('<span class="xbOffCanvasArrow"><i class="xbOffCanvasExpand fa fa-chevron-down"></i></span>');
+
+    $('.xbOffCanvasArrow').click(function() {
+        $(this).siblings('.xbOffCanvasSubMenu, .secondaryContent.blockLinksList').slideToggle('fast');
+        $(this).children('.xbOffCanvasExpand').toggleClass('fa-flip-vertical ');
+    });
+
+});
+</script>
+
+
+	
+	
+	<link rel="apple-touch-icon" href="https://www.resource-zone.com/forum/styles/flatawesomeplus/xenforo/logo.og.png" />
+	<link rel="alternate" type="application/rss+xml" title="RSS feed for Resource-Zone" href="f/-/index.rss" />
+	
+	
+	<link rel="canonical" href="https://www.resource-zone.com/forum/t/39973/" />
+	<meta name="description" content="具体的FAQ中文请见： https://www.resource-zone.com/forum/index.php?app=core&amp;module=help   谢谢photofox帮助上传。 :)..." />	<meta property="og:site_name" content="Resource-Zone" />
+	<meta property="og:image" content="https://www.resource-zone.com/forum/data/avatars/m/10/10312.jpg?1393107064" />
+	<meta property="og:image" content="https://www.resource-zone.com/forum/styles/flatawesomeplus/xenforo/logo.og.png" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://www.resource-zone.com/forum/t/39973/" />
+	<meta property="og:title" content="Important - 常见问题解答以及如何成为一名编辑员" />
+	<meta property="og:description" content="具体的FAQ中文请见： https://www.resource-zone.com/forum/index.php?app=core&amp;module=help   谢谢photofox帮助上传。 :)..." />
+	
+	
+	
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setCookieDomain", "*.www.resource-zone.com"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.forumadmins.org/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//stats.forumadmins.org/piwik.php?idsite=1&rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</head>
+
+<body class="node32 node20 SelectQuotable">
+
+
+<div class="xbOffCanvasContainer">
+
+
+
+	
+		
+
+
+	<script>
+	XenForo.LoginBar = function(a){};
+	</script>
+
+
+<div id="loginBar">
+	<div class="pageWidth">
+		<div class="pageContent">	
+			<h3 id="loginBarHandle">
+				
+				<label for="LoginControl"><a href="login/" class="OverlayTrigger concealed noOutline">Log in</a></label>  / <a href="register/">Register</a>
+				
+			</h3>
+			
+			<span class="helper"></span>
+			
+			
+		</div>
+	</div>
+</div>
+	
+
+
+
+
+<div class="xbTopBar">
+	<div class="pageWidth">
+		
+		
+			<ul class="xbLeftside">
+				<li>Welcome to Resource Zone.</li>
+			</ul>
+		
+		
+		
+		<ul class="xbRightside">
+			<li class="mainTopLink xbNewPostLink"><a href="find-new/posts" rel="nofollow">Recent Posts</a></li>
+			
+			
+				
+					<li class="mainTopLink xbContactUs"><a href="misc/contact" class="OverlayTrigger" data-overlayOptions="{&quot;fixed&quot;:false}">Contact Us</a></li>
+				
+			
+						
+			
+			
+			
+			
+						
+			<li class="mainTopLink xbLoginLink">
+					<label for="LoginControl"><a href="login/" class="OverlayTrigger">Log in</a></label>
+			</li>
+			
+			<li class="mainTopLink xbRegisterLink">
+					<a href="register/">Register</a>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+		</ul>		
+	</div>
+</div>
+
+
+<div id="headerMover">
+<header>
+	
+
+
+<div id="header">
+	
+		<div id="logoBlock">
+		<div class="pageWidth">
+			<div class="pageContent">
+			
+
+
+
+<ul class="xbSocialLinks">
+	
+	<li class="xbslTwitter"><a href="https://twitter.com/CurlieCrew" target="_blank" title="Twitter"><i class="fa fa-twitter fa-fw"></i></a></li>
+	<li class="xbslFacebook"><a href="https://www.facebook.com/groups/1722149908115641/" target="_blank" title="Facebook"><i class="fa fa-facebook fa-fw"></i></a></li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="xbslRSS"><a href="https://www.resource-zone.com/forum/f/-/index.rss" target="_blank" title="RSS"><i class="fa fa-rss fa-fw"></i></a></li>
+	
+		
+			<li class="xbslContact"><a href="misc/contact" title="Contact Us" class="OverlayTrigger" data-overlayOptions="{&quot;fixed&quot;:false}"><i class="fa fa-envelope fa-fw"></i></a></li>
+		
+	
+	
+	
+</ul>
+
+			
+			<div id="logo">
+				<a href="https://www.resource-zone.com/forum/">
+					<span></span>
+					
+					R<span>esource</span> Z<span>one</span>
+					
+				</a>
+			</div>
+			
+			
+			<span class="helper"></span>
+		</div>
+	</div>
+</div>	
+		
+
+
+<div class="navFloatHelper"></div>
+<div class="navFloatwrapper">
+
+
+<div id="navigation" class="pageWidth withSearch">
+	<div class="pageContent">
+		<nav>
+
+<div class="navTabs">
+<div class="navTabsInner">
+	
+	
+	<div class="xbOffCanvasControls">
+		<a onclick="return false;" class="slideLeft xbOffCanvasToggle" href="#"><i class="fa fa-bars fa-fw"></i> <span class="menuText">Menu</span></a>
+		<a href="find-new/posts" rel="nofollow" class="xbOffCanvasNew Tooltip" title="Recent Posts"> <i class="fa fa-commenting fa-fw"></i><span>Recent Posts</span></a>
+	</div>
+		
+				
+	<ul class="publicTabs">
+	
+	
+
+	
+
+		
+	
+		<!-- home -->
+		
+			<li class="navTab home PopupClosed"><a href="https://www.resource-zone.com" class="navLink"><i class="fa fa-home"></i></a></li>
+		
+		
+		
+		<!-- extra tabs: home -->
+		
+		
+		
+		<!-- forums -->
+		
+		
+			
+			<li class="navTab forums selected">
+			
+				<a href="https://www.resource-zone.com/forum/" class="navLink">Forums</a>
+				<a href="https://www.resource-zone.com/forum/" class="SplitCtrl" rel="Menu"></a>
+				<div class="xbTabPopupArrow">
+					<span class="arrow"><span></span></span>
+				</div>
+				
+				
+				<div class="tabLinks forumsTabLinks">
+				
+
+				
+					<div class="primaryContent menuHeader">
+						<h3>Forums</h3>
+						<div class="muted">Quick Links</div>
+					</div>
+					<ul class="secondaryContent blockLinksList">
+					
+						
+						<li><a href="search/?type=post">Search Forums</a></li>
+						
+						<li><a href="find-new/posts" rel="nofollow">Recent Posts</a></li>
+					
+					</ul>
+				
+				</div>
+			</li>
+		
+		
+		
+		<!-- extra tabs: middle -->
+		
+		
+		
+		<!-- members -->
+		
+			
+			<li class="navTab members Popup PopupControl PopupClosed">
+			
+				<a href="https://www.resource-zone.com/forum/members/" class="navLink">Members</a>
+				<a href="https://www.resource-zone.com/forum/members/" class="SplitCtrl" rel="Menu"></a>
+				<div class="xbTabPopupArrow">
+					<span class="arrow"><span></span></span>
+				</div>
+				
+				<div class="Menu JsOnly tabMenu membersTabLinks">
+				
+				
+					<div class="primaryContent menuHeader">
+						<h3>Members</h3>
+						<div class="muted">Quick Links</div>
+					</div>
+					<ul class="secondaryContent blockLinksList">
+					
+						<li><a href="members/">Notable Members</a></li>
+						<li><a href="members/list">Registered Members</a></li>
+						<li><a href="online/">Current Visitors</a></li>
+						<li><a href="recent-activity/">Recent Activity</a></li>
+						
+					
+					</ul>
+				
+				</div>
+			</li>
+						
+		<!-- extra tabs: end -->
+		
+
+		
+
+		
+		
+		
+
+		<!-- responsive popup -->
+		<li class="navTab navigationHiddenTabs Popup PopupControl PopupClosed" style="display:none">	
+						
+			<a rel="Menu" class="navLink NoPopupGadget"><span class="menuIcon">Menu</span></a>
+			
+			<div class="Menu JsOnly blockLinksList primaryContent" id="NavigationHiddenMenu"></div>
+		</li>
+		
+			
+		<!-- no selection -->
+		
+		
+	</ul>
+	
+
+	
+		
+				
+		
+		
+	<ul class="visitorTabs">
+		
+			
+			
+						
+			<li class="navTab PopupClosed xbGuestLogin">
+					<label for="LoginControl"><a href="login/" class="OverlayTrigger navLink"><i class="fa fa-sign-in fa-fw"></i></i> <span class="xbVisitorText">Log in</span></a></label>
+			</li>
+			
+			<li class="navTab PopupClosed xbGuestRegister">
+					<a href="register/" class="navLink"><i class="fa fa-user-plus fa-fw"></i></i> <span class="xbVisitorText">Register</span></a>
+			</li>
+			
+			
+			
+			
+			
+			
+		
+		
+	</ul>
+			
+				
+</div>
+</div>
+
+
+<div class="xbSubNavHelper"></div>
+
+<span class="helper"></span>
+			
+		</nav>	
+	</div>
+</div>
+
+	
+
+
+</div>
+
+	
+	
+		
+			
+
+<div id="searchBar" class="pageWidth">
+	
+	<span id="QuickSearchPlaceholder" title="Search"><i class="fa fa-search fa-fw"></i></span>
+	<fieldset id="QuickSearch">
+		<form action="search/search" method="post" class="formPopup">
+			
+			<div class="primaryControls">
+				<!-- block: primaryControls -->
+				<input type="search" name="keywords" value="" class="textCtrl" placeholder="Search..." title="Enter your search and hit enter" id="QuickSearchQuery" />				
+				<!-- <a class="xbSearchIcon" href="/search/"><i class="fa fa-search"></i></a> --> <!-- end block: primaryControls -->
+			</div>
+			
+			<div class="secondaryControls">
+				<div class="controlsWrapper">
+				
+					<!-- block: secondaryControls -->
+					<dl class="ctrlUnit">
+						<dt></dt>
+						<dd><ul>
+							<li><label><input type="checkbox" name="title_only" value="1"
+								id="search_bar_title_only" class="AutoChecker"
+								data-uncheck="#search_bar_thread" /> Search titles only</label></li>
+						</ul></dd>
+					</dl>
+				
+					<dl class="ctrlUnit">
+						<dt><label for="searchBar_users">Posted by Member:</label></dt>
+						<dd>
+							<input type="text" name="users" value="" class="textCtrl AutoComplete" id="searchBar_users" />
+							<p class="explain">Separate names with a comma.</p>
+						</dd>
+					</dl>
+				
+					<dl class="ctrlUnit">
+						<dt><label for="searchBar_date">Newer Than:</label></dt>
+						<dd><input type="date" name="date" value="" class="textCtrl" id="searchBar_date" /></dd>
+					</dl>
+					
+					
+					<dl class="ctrlUnit">
+						<dt></dt>
+						<dd><ul>
+								
+									<li><label title="Search only 常见问题解答以及如何成为一名编辑员"><input type="checkbox" name="type[post][thread_id]" value="39973"
+	id="search_bar_thread" class="AutoChecker"
+	data-uncheck="#search_bar_title_only, #search_bar_nodes" /> Search this thread only</label></li>
+								
+									<li><label title="Search only Chinese"><input type="checkbox" name="nodes[]" value="32"
+	id="search_bar_nodes" class="Disabler AutoChecker" checked="checked"
+	data-uncheck="#search_bar_thread" /> Search this forum only</label>
+	<ul id="search_bar_nodes_Disabler">
+		<li><label><input type="checkbox" name="type[post][group_discussion]" value="1"
+			id="search_bar_group_discussion" class="AutoChecker"
+			data-uncheck="#search_bar_thread" /> Display results as threads</label></li>
+	</ul></li>
+								
+						</ul></dd>
+					</dl>
+					
+				</div>
+				<!-- end block: secondaryControls -->
+				
+				<dl class="ctrlUnit submitUnit sectionFooter">
+					<dt></dt>
+					<dd>
+						<input type="submit" value="Search" class="button primary Tooltip" title="Find Now" />
+						<div class="Popup" id="commonSearches">
+							<a rel="Menu" class="button NoPopupGadget Tooltip" title="Useful Searches" data-tipclass="flipped"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+							<div class="Menu">
+								<div class="xbSearchPopupArrow">
+									<span class="arrow"><span></span></span>
+								</div>
+								<div class="primaryContent menuHeader">
+									<h3>Useful Searches</h3>
+								</div>
+								<ul class="secondaryContent blockLinksList">
+									<!-- block: useful_searches -->
+									<li><a href="find-new/posts?recent=1" rel="nofollow">Recent Posts</a></li>
+									
+									<!-- end block: useful_searches -->
+								</ul>
+							</div>
+						</div>
+						<a href="search/" class="button moreOptions Tooltip" title="Advanced Search">More...</a>
+					</dd>
+				</dl>
+				
+			</div>
+			
+			<input type="hidden" name="_xfToken" value="" />
+		</form>		
+	</fieldset>
+	
+</div>
+		
+	
+</div>
+
+	
+	
+</header>
+
+
+
+<div id="content" class="thread_view">
+	<div class="pageWidth">
+		<div class="pageContent">
+			
+			
+			
+			
+			<!-- main content area -->
+			
+			
+
+			
+			
+						
+						
+						
+						
+						
+							
+						<div class="breadBoxTop ">
+							
+							
+
+<nav>
+	
+		
+			
+				
+			
+		
+			
+				
+			
+		
+	
+
+	<fieldset class="breadcrumb">
+		
+		<a href="misc/quick-navigation-menu?selected=node-32" class="OverlayTrigger jumpMenuTrigger" data-cacheOverlay="true" title="Open quick navigation"><i class="fa fa-sitemap"></i><!--Jump to...--></a> 
+			
+		<div class="boardTitle"><strong>Resource-Zone</strong></div>
+		
+		<span class="crumbs">
+			
+				<span class="crust homeCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="https://www.resource-zone.com" class="crumb" rel="up" itemprop="url"><span itemprop="title"><i class="fa fa-home fa-fw"></i> <span class="xbHiddenText">Home</span></span></a>
+					<span class="arrow"><span></span></span>
+				</span>
+			
+			
+			
+				<span class="crust selectedTabCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="https://www.resource-zone.com/forum/" class="crumb" rel="up" itemprop="url"><span itemprop="title">Forums</span></a>
+					<span class="arrow"><span>&gt;</span></span>
+				</span>
+			
+			
+			
+				
+					<span class="crust" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+						<a href="https://www.resource-zone.com/forum/#world.20" class="crumb" rel="up" itemprop="url"><span itemprop="title">World</span></a>
+						<span class="arrow"><span>&gt;</span></span>
+					</span>
+				
+					<span class="crust" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+						<a href="https://www.resource-zone.com/forum/f/chinese.32/" class="crumb" rel="up" itemprop="url"><span itemprop="title">Chinese</span></a>
+						<span class="arrow"><span>&gt;</span></span>
+					</span>
+				
+			
+		</span>
+	</fieldset>
+</nav>
+						</div>
+						
+						
+						
+						
+						
+					
+						<!--[if lt IE 8]>
+							<p class="importantMessage">You are using an out of date browser. It  may not display this or other websites correctly.<br />You should upgrade or use an <a href="https://www.google.com/chrome/browser/" target="_blank">alternative browser</a>.</p>
+						<![endif]-->
+
+						
+						
+
+						
+						
+						
+						
+						
+												
+							<!-- h1 title, description -->
+							<div class="titleBar">
+								
+								<h1><span class="prefix prefixOrange">Important</span> 常见问题解答以及如何成为一名编辑员
+									
+									</h1>
+								
+								<p id="pageDescription" class="muted ">
+	Discussion in '<a href="f/chinese.32/">Chinese</a>' started by <a href="members/florawil.10312/" class="username"><span class="style6">florawil</span></a>, <a href="t/39973/"><span class="DateTime" title="Dec 19, 2006 at 8:25 AM">Dec 19, 2006</span></a>.
+</p>
+							</div>
+						
+						
+						
+						
+						
+						
+						<!-- main template -->
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<dl class="threadAlerts secondaryContent">
+			<dt>Thread Status:</dt>
+			
+				
+	
+				
+					<dd class="lockedAlert">
+						<span class="icon Tooltip" title="Locked" data-tipclass="iconTip"><i class="fa fa-lock fa-fw"></i></span>
+							Not open for further replies.</dd>
+				
+			
+		</dl>
+	
+
+
+
+
+<div class="pageNavLinkGroup">
+	<div class="linkGroup SelectionCountContainer">
+		
+		
+	</div>
+
+	
+</div>
+
+
+
+
+
+<form action="inline-mod/post/switch" method="post"
+	class="InlineModForm section"
+	data-cookieName="posts"
+	data-controls="#InlineModControls"
+	data-imodOptions="#ModerationSelect option">
+
+	<ol class="messageList xbMessageModern" id="messageList">
+		
+			
+				
+
+
+
+<li id="post-236950" class="message  staff threadStarter  " data-author="florawil">
+
+	<div class="messageHeading">
+		<span class="leftSide">
+			
+				<a href="t/39973/" title="Permalink" class="datePermalink"><span class="DateTime" title="Dec 19, 2006 at 8:25 AM">Dec 19, 2006</span></a>
+			
+		</span>
+		
+		<span class="rightSide">
+			<a href="t/39973/" title="Permalink" class="item muted postNumber hashPermalink OverlayTrigger" data-href="posts/236950/permalink">#1</a>
+	
+		</span>
+		
+	</div>
+
+
+	<div class="xbMessageHelper">
+	
+	
+
+<div class="messageUserInfo" itemscope="itemscope" itemtype="http://data-vocabulary.org/Person">
+<div class="messageUserBlock  xbOnlineAnimated">
+	
+		<div class="avatarHolder">
+			<span class="helper"><span></span></span>
+			<a href="members/florawil.10312/" class="avatar Av10312l" data-avatarhtml="true"><img src="data/avatars/l/10/10312.jpg?1393107064" width="192" height="192" alt="florawil" /></a>
+			
+			<!-- slot: message_user_info_avatar -->
+		</div>
+	
+
+
+	
+		<h3 class="userText">
+			<a href="members/florawil.10312/" class="username" itemprop="name"><span class="style6">florawil</span></a>
+			<em class="userTitle" itemprop="title">DMOZ Meta</em>
+			<em class="userBanner bannerRed wrapped" itemprop="title"><span class="before"></span><strong>Curlie Meta</strong><span class="after"></span></em>
+			<!-- slot: message_user_info_text -->
+		</h3>
+	
+		
+	
+		<div class="extraUserInfo xbBoxedFA">
+			
+				
+			
+				<div class="xbMainUserInfo">	
+				
+				
+					<dl class="pairsJustified xbMessages">
+						<dt><i class="fa fa-comments fa-fw Tooltip" title="Messages" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd><a href="search/member?user_id=10312" class="concealed" rel="nofollow">1,020</a></dd>
+					</dl>
+				
+				
+					<dl class="pairsJustified xbLikes">
+						<dt><i class="fa fa-thumbs-up fa-fw Tooltip" title="Likes Received" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd>2</dd>
+					</dl>
+				
+				
+				
+					<dl class="pairsJustified xbTrophyPoints">
+						<dt><i class="fa fa-trophy fa-fw Tooltip" title="Trophy Points" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd><a href="members/florawil.10312/trophies" class="OverlayTrigger concealed">38</a></dd>
+					</dl>
+				
+				
+				
+				</div>
+				
+			
+				
+					<dl class="pairsJustified xbJoinDate">
+						<dt><i class="fa fa-calendar fa-fw Tooltip" title="Joined" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd>Nov 4, 2004</dd>
+					</dl>
+				
+			
+				
+				
+				
+				
+				
+			
+				
+							
+						
+			
+			
+			
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				
+			
+			
+			
+		</div>
+	
+		
+
+
+	<span class="arrow"><span></span></span>
+</div>
+</div>
+
+	<div class="messageInfo primaryContent">		
+		
+		
+		
+		<div class="messageContent">
+			<article>
+				
+				
+				
+				<blockquote class="messageText SelectQuoteContainer ugc baseHtml">
+					
+					具体的FAQ中文请见： <a href="https://www.resource-zone.com/forum/index.php?app=core&amp;module=help" class="internalLink">https://www.resource-zone.com/forum/index.php?app=core&amp;module=help</a>   谢谢photofox帮助上传。 <img src="styles/default/xenforo/clear.png" class="mceSmilieSprite mceSmilie1" alt=":)" title="Smile    :)" /><br />
+<br />
+<b>（建议大家不要在选择中文语言后在论坛发贴，现在会出现乱码，因为中文包使用的是UTF8，其他大部分语言包是ISO，请选择英文语言后发贴，谢谢！）</b><br />
+<br />
+<br />
+<b>推荐阅读</b><br />
+<br />
+建议各位能认真阅读“申请成为编辑员”的具体说明和各个目录的编辑要求，这些可能是显而易见的，但是大部分我们所接受到的大部分申请表显示申请人根本没有事先进行阅读。<br />
+<br />
+<br />
+对于这部分关于申请编辑员有帮助的信息，你也可以阅读ODP的<a href="https://dmoztools.net/docs/zh_CN/help/become.html" target="_blank" class="externalLink ProxyLink" data-proxy-href="proxy.php?link=https%3A%2F%2Fdmoztools.net%2Fdocs%2Fzh_CN%2Fhelp%2Fbecome.html&amp;hash=0c7daec6aaf4691a5eb9a8b7e990ac01">申请成为编辑员</a>专题。<br />
+<br />
+<br />
+<b>选择您的第一个目录 - 包括大小与目录复杂度</b><br />
+<br />
+正如申请指南中所提到的，“如果你刚开始申请一个比较小的，待发展的目录（通常网站数少于100个），您的申请成功几率会大一些”，这其中也包括子目录网站的数量。所以在一般情况下，你不可能被接受编辑一个比较大的目录。<br />
+<br />
+<br />
+对你而言，不是不能申请一个有很多子目录的比较大的目录，但是请注意一个通常有很多子目录的目录被成功申请的概率将会比那些没有子目录的目录低的多。<br />
+<br />
+<br />
+<b>选择您的第一个目录 – 哪个比较合适呢？</b><br />
+<br />
+一些传言认为，对于“<a href="https://dmoztools.net/World/Chinese_Simplified/%E5%9C%B0%E5%8C%BA/" target="_blank" class="externalLink ProxyLink" data-proxy-href="proxy.php?link=https%3A%2F%2Fdmoztools.net%2FWorld%2FChinese_Simplified%2F%25E5%259C%25B0%25E5%258C%25BA%2F&amp;hash=35faaef717bdb268c06bf8b6400fa3e5">地区</a>”目录会被更容易接受，新编辑员不会被直接接受编辑商业目录，包括商业，购物和大部分计算机目录，新编辑员不会被接受有大量待审批网站的目录（包括商业，购物和大部分计算机的目录）。这些传言是<b>错误</b>的。建议选择一个你所感兴趣的目录，选择一个你认为你可以通过自己的努力使其尽快改善的目录。请注意有些目录可能很容易被滥用，但这并不代表不能接受新的编辑员。<br />
+<br />
+<br />
+您可以申请一个已经有编辑员的目录。几乎所有的目录都是有超过一个编辑员对其进行编辑与管理的，没有一个编辑员真正的所谓“拥有”一个目录。同时，也有可能的是一些挂名的编辑员并不是很活跃。所以，我们会尽量避免这样的问题存在，当你申请编辑一个有编辑员的目录的时候，我们会详细审查您的申请建议。<br />
+<br />
+<br />
+<b>选择您的第一个目录 – 与您相关的网站</b><br />
+<br />
+在申请表中提到，“我们不会禁止编辑员申请与自己利益有关的目录，因为通常来说，那些编辑员对于自己的网站与竞争者的网站的信息比其他人更为了解。这些知识与信息判断能力能帮助建设一个更为权威的目录。但是，我们不能容忍编辑员只加与自己相关的网站，或恶意干扰其他提交者的网站。”所以诚实地透露所有与您相关的网站是非常重要的。<br />
+<br />
+<br />
+<b>选择您的第一个目录 – 语言</b><br />
+<br />
+你应该有足够能力阅读与编辑你所申请的那个目录的语言。申请一个除<a href="https://dmoztools.net/World" target="_blank" class="externalLink ProxyLink" data-proxy-href="proxy.php?link=https%3A%2F%2Fdmoztools.net%2FWorld&amp;hash=f149c5f12c24fa704831649e78e52c19">World</a>目录之外的目录这代表了你应该有足够的能力编辑英文，包括使用正确的标点，语法，拼写。如果英文不是你的母语或者你觉得你没有能力编辑英文，请考虑申请一个你所熟悉的<a href="https://dmoztools.net/World" target="_blank" class="externalLink ProxyLink" data-proxy-href="proxy.php?link=https%3A%2F%2Fdmoztools.net%2FWorld&amp;hash=f149c5f12c24fa704831649e78e52c19">World</a>目录。<br />
+<br />
+<br />
+<b>匿名 – 不匿名？</b><br />
+<br />
+在一些情况下会帮助我们确定申请人的个人信息，特别是如果你认为是一些能帮助我们更好的了解您与您的网站的一些信息。在一些可能会被滥用的目录，我们会更容易信任那些愿意公开他/她的网站与个人信息的申请人。<br />
+<br />
+<br />
+<b>最后……</b><br />
+<br />
+当申请表被提交后，您将会得到一个确认邮件，你需要回复它。如果你没有得到这封邮件，请使用其他的邮件地址再试一次。<br />
+<br />
+<br />
+当你提交申请表的时候，如果你得到一个错误的信息，请再使用其他浏览器试一下。如果仍然没有作用，请发布在这里，我们会一起帮助您解决。<br />
+<br />
+<br />
+<b>申请表审核程序</b><br />
+<br />
+每一个申请表是由一个或多个有经验的编辑员 – 一名 <a href="https://dmoztools.net/erz/editors/editor-types.html#meta" target="_blank" class="externalLink ProxyLink" data-proxy-href="proxy.php?link=https%3A%2F%2Fdmoztools.net%2Ferz%2Feditors%2Feditor-types.html%23meta&amp;hash=37dc7404a7367383be8aec153227d5a3">meta</a> 或 一名 <a href="https://dmoztools.net/erz/editors/editor-types.html#catmod" target="_blank" class="externalLink ProxyLink" data-proxy-href="proxy.php?link=https%3A%2F%2Fdmoztools.net%2Ferz%2Feditors%2Feditor-types.html%23catmod&amp;hash=1fc3dc1981de7eae669ca9b3490e674f">category moderator (catmod)</a> - 审核的。这可能需要几小时或几周。<br />
+<br />
+<br />
+如果你的申请被接受，你将受到一封欢迎邮件，其中包含更多的信息。祝你编辑愉快！当然请不要忘记我们的<a href="https://dmoztools.net/docs/zh_CN/guidelines/" target="_blank" class="externalLink ProxyLink" data-proxy-href="proxy.php?link=https%3A%2F%2Fdmoztools.net%2Fdocs%2Fzh_CN%2Fguidelines%2F&amp;hash=39cf01f8a49629b101c075dad7c756e0">编辑指南</a>。<br />
+<br />
+<br />
+如果申请被拒绝，通常会有一个回复，可能会包含一些具体的说明。<br />
+<br />
+<br />
+如果您的申请被拒绝，欢迎再次申请。不需要等待一段时间再申请。建议您可以对于一些导致你的申请被拒绝的问题作一些改进。<br />
+<br />
+<br />
+<img src="styles/default/xenforo/clear.png" class="mceSmilieSprite mceSmilie1" alt=":)" title="Smile    :)" />
+					<div class="messageTextEndMarker">&nbsp;</div>
+				</blockquote>
+			</article>
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+			
+		
+	
+	
+				
+		<div class="messageMeta ToggleTriggerAnchor">
+			<div class="privateControls">
+				
+				
+				<div class="privateControlsDefault">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				</div>
+			<div class="privateControlsMenu">
+				
+			</div>
+			
+			</div>
+			
+			<div class="publicControls">
+				
+				
+				
+				
+				
+			</div>
+		</div>
+	
+		
+		
+		<div id="likes-post-236950"></div>
+	</div>
+
+	
+	
+	
+	
+	</div>
+	
+	
+	
+	
+</li>
+
+
+			
+		
+			
+				
+
+
+
+<li id="post-236951" class="message  staff threadStarter  " data-author="florawil">
+
+	<div class="messageHeading">
+		<span class="leftSide">
+			
+				<a href="t/39973/#post-236951" title="Permalink" class="datePermalink"><span class="DateTime" title="Dec 19, 2006 at 8:44 AM">Dec 19, 2006</span></a>
+			
+		</span>
+		
+		<span class="rightSide">
+			<a href="t/39973/#post-236951" title="Permalink" class="item muted postNumber hashPermalink OverlayTrigger" data-href="posts/236951/permalink">#2</a>
+	
+		</span>
+		
+	</div>
+
+
+	<div class="xbMessageHelper">
+	
+	
+
+<div class="messageUserInfo" itemscope="itemscope" itemtype="http://data-vocabulary.org/Person">
+<div class="messageUserBlock  xbOnlineAnimated">
+	
+		<div class="avatarHolder">
+			<span class="helper"><span></span></span>
+			<a href="members/florawil.10312/" class="avatar Av10312l" data-avatarhtml="true"><img src="data/avatars/l/10/10312.jpg?1393107064" width="192" height="192" alt="florawil" /></a>
+			
+			<!-- slot: message_user_info_avatar -->
+		</div>
+	
+
+
+	
+		<h3 class="userText">
+			<a href="members/florawil.10312/" class="username" itemprop="name"><span class="style6">florawil</span></a>
+			<em class="userTitle" itemprop="title">DMOZ Meta</em>
+			<em class="userBanner bannerRed wrapped" itemprop="title"><span class="before"></span><strong>Curlie Meta</strong><span class="after"></span></em>
+			<!-- slot: message_user_info_text -->
+		</h3>
+	
+		
+	
+		<div class="extraUserInfo xbBoxedFA">
+			
+				
+			
+				<div class="xbMainUserInfo">	
+				
+				
+					<dl class="pairsJustified xbMessages">
+						<dt><i class="fa fa-comments fa-fw Tooltip" title="Messages" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd><a href="search/member?user_id=10312" class="concealed" rel="nofollow">1,020</a></dd>
+					</dl>
+				
+				
+					<dl class="pairsJustified xbLikes">
+						<dt><i class="fa fa-thumbs-up fa-fw Tooltip" title="Likes Received" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd>2</dd>
+					</dl>
+				
+				
+				
+					<dl class="pairsJustified xbTrophyPoints">
+						<dt><i class="fa fa-trophy fa-fw Tooltip" title="Trophy Points" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd><a href="members/florawil.10312/trophies" class="OverlayTrigger concealed">38</a></dd>
+					</dl>
+				
+				
+				
+				</div>
+				
+			
+				
+					<dl class="pairsJustified xbJoinDate">
+						<dt><i class="fa fa-calendar fa-fw Tooltip" title="Joined" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd>Nov 4, 2004</dd>
+					</dl>
+				
+			
+				
+				
+				
+				
+				
+			
+				
+							
+						
+			
+			
+			
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				
+			
+			
+			
+		</div>
+	
+		
+
+
+	<span class="arrow"><span></span></span>
+</div>
+</div>
+
+	<div class="messageInfo primaryContent">		
+		
+		
+		
+		<div class="messageContent">
+			<article>
+				
+				
+				
+				<blockquote class="messageText SelectQuoteContainer ugc baseHtml">
+					
+					<b>关于如何在目录提交您的网站</b><br />
+<br />
+<b>关于如何在目录提交您的网站</b><br />
+<ul>
+<li>我可以找到很多适合于我的网站收录的目录 - 是否应该提交到所有的目录？</li>
+</ul>不，请不要这样做。通常只有一个目录最合适收录您的网站，当然也有例外。如果你无法确认哪个目录最合适，可以试着发在论坛，请教编辑员的建议。我们愿意给予提交者一些建议，这远比我们花更多的时间处理在不同目录的网站简单地多。<ul>
+<li>我所提交的目录没有编辑员 - 我所提交的网站还能被审核吗？</li>
+</ul>你所认为目录无编辑员是因为看到的目录下方没有列名的编辑员。但这不意味着该目录没有编辑员管理。任何更高权限的编辑员都可以对以下的目录进行编辑与管理。除此之外，有两类编辑员（Editalls &amp; Metas）可以编辑任何一个目录。所以，总会有人处理每个提交的网站。<ul>
+<li>在我再次提交网站前，我应该等待多久呢？</li>
+</ul>当一个网站提交到ODP，它则在目录的待审核队列等待编辑员审核。提交的网站不会过期。所以一般采取的方式是请提交您的网站到目录，然后耐心等待至少一个月，如果一个月后网站没有被发布，你可以选择再次提交，但请注意后者将覆盖之前所提交的网站。编辑员有需要方式审核网站，而通常大部分会选择按照时间先后的顺序，如果是这样的话，多次提交网站只会使得您的网站需要等待更长的时间。<ul>
+<li>为什么我不能使用ODP搜索找到我的网站？</li>
+</ul>ODP是一个目录，不是搜索引擎。ODP的搜索功能目的是作为一个方便的工具帮助寻找到具体专题的某个目录，而不是网站。它的数据是根据标题与描述，而不是网站具体内容。它没有使用关键词列表，不提供任何方式的排名分析，对于普通用户它不是作为一个搜索引擎。<br />
+如果需要搜索到具体网站，那么最好的方式是将网址去除www进行搜索。举例，如果你需要寻找<a href="http://www.example.com" target="_blank" class="externalLink ProxyLink" data-proxy-href="proxy.php?link=http%3A%2F%2Fwww.example.com&amp;hash=5c0d7893096d210fbebbfe8238d56473">http://www.example.com</a> 其中包括一些具体的子页面 (在ODP目录所谓的 “深层链接” )，试着搜索“example.com”。搜索数据通常有滞后性，至少可能无法搜索到最近一周甚至更长时间所更新的网站。<br />
+<br />
+由于这些因素在，应该说没有一种更可靠的方式查询一个具体的网站是否被加入ODP。<ul>
+<li>我能否提交我的网站到专题目录和相应的地区目录呢？</li>
+</ul>如果网站是关于地区目录的，好，那么，举例来说，一个网站如果更合适于或对于用户而言更突出地区特色的，那么，收录在地区应该说更合适。<br />
+一些网站只列在地区目录，有一些从来不列在地区目录，所以总是有很多例外。如果你认为网站合适于同时加入两个目录，那么就请同时提交他们 - 你不会为此而受处罚。<ul>
+<li>需要等待多久我的网站才能被审核？</li>
+</ul>这个时间（从提交网站到编辑员审核网站）可能需要二分钟，也可能需要二年。这取决于ODP义务的本质 - 编辑员义务为目录工作的空闲时间。当然审核网站仅仅是其中很多任务中的一项，对于很多编辑员这并不是首要他们考虑的。<br />
+审核网站并发布仅仅是对于丰富ODP网站资源的一个方式 - 我们鼓励编辑员自己寻找优秀的网站并主动为目录加入。<ul>
+<li>为什么只列我的竞争者的网站，而我的网站还没有被加入？</li>
+</ul>通常我们按照先后顺序审核每个独立的网站，这也是很多编辑员所做的事情。所以在你看来会有可能竞争者的网站先被加入。<ul>
+<li>那么多糟糕的网站已经被收录，为何我的网站没有被收录？</li>
+</ul>正如他们所说的，美丽来自于目睹者的眼中(情人眼里出西施)。 首先不同的人对于网站有着不同的看法。这也就是我们需要根据ODP编辑指南，要求我们的编辑员按照指南进行合理的编辑。<br />
+其次，标准的改变 - 数年前，当ODP还是未成熟的目录，其特殊性致使需要越快越好的加入更多的网站。如今，我们把重点转移到提高网站的质量上来。所以可能现在被发布的网站有一些在现在看并不是那么高质量。在这种情况下，如果当编辑员发现他们，我们会将其删除。如果你认为一些是滥用目录导致的问题，请是滥用目录表格的方式，或联系一个 meta编辑员，向他们描述滥用目录的情况。<br />
+<br />
+第三，网站的改变 - 在很多情况可能网站站长改变了网站的内容，使其网站内容完全与先前内容不相同。如果你发现这样的网站，你如果希望帮助ODP成为一个更好的目录，那么建议通过滥用目录表格向我们汇报这些问题。<br />
+<br />
+最后，随着ODP的逐渐发展，我们对于网站需要唯一独特的要求越来越高。如果我们有这样的想法，“好吧，既然这个网站没比其他网站更糟糕，所以我打算加入它”，这样如何改善目录呢？如果你希望你的网站被列在一个目录中，它应该比其他最好的网站有着更丰富独特的内容。不要做第二个“最糟糕的”网站，目标是要做最好的网站。<br />
+<br />
+以上内容部分来自 FAQ 的“关于如何在目录提交您的网站” - Questions about suggesting your site to the directory 。
+					<div class="messageTextEndMarker">&nbsp;</div>
+				</blockquote>
+			</article>
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+			
+		
+	
+	
+				
+		<div class="messageMeta ToggleTriggerAnchor">
+			<div class="privateControls">
+				
+				
+				<div class="privateControlsDefault">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				</div>
+			<div class="privateControlsMenu">
+				
+			</div>
+			
+			</div>
+			
+			<div class="publicControls">
+				
+				
+				
+				
+				
+			</div>
+		</div>
+	
+		
+		
+		<div id="likes-post-236951"></div>
+	</div>
+
+	
+	
+	
+	
+	</div>
+	
+	
+	
+	
+</li>
+
+
+			
+		
+			
+				
+
+
+
+<li id="post-236952" class="message  staff threadStarter  " data-author="florawil">
+
+	<div class="messageHeading">
+		<span class="leftSide">
+			
+				<a href="t/39973/#post-236952" title="Permalink" class="datePermalink"><span class="DateTime" title="Dec 19, 2006 at 8:52 AM">Dec 19, 2006</span></a>
+			
+		</span>
+		
+		<span class="rightSide">
+			<a href="t/39973/#post-236952" title="Permalink" class="item muted postNumber hashPermalink OverlayTrigger" data-href="posts/236952/permalink">#3</a>
+	
+		</span>
+		
+	</div>
+
+
+	<div class="xbMessageHelper">
+	
+	
+
+<div class="messageUserInfo" itemscope="itemscope" itemtype="http://data-vocabulary.org/Person">
+<div class="messageUserBlock  xbOnlineAnimated">
+	
+		<div class="avatarHolder">
+			<span class="helper"><span></span></span>
+			<a href="members/florawil.10312/" class="avatar Av10312l" data-avatarhtml="true"><img src="data/avatars/l/10/10312.jpg?1393107064" width="192" height="192" alt="florawil" /></a>
+			
+			<!-- slot: message_user_info_avatar -->
+		</div>
+	
+
+
+	
+		<h3 class="userText">
+			<a href="members/florawil.10312/" class="username" itemprop="name"><span class="style6">florawil</span></a>
+			<em class="userTitle" itemprop="title">DMOZ Meta</em>
+			<em class="userBanner bannerRed wrapped" itemprop="title"><span class="before"></span><strong>Curlie Meta</strong><span class="after"></span></em>
+			<!-- slot: message_user_info_text -->
+		</h3>
+	
+		
+	
+		<div class="extraUserInfo xbBoxedFA">
+			
+				
+			
+				<div class="xbMainUserInfo">	
+				
+				
+					<dl class="pairsJustified xbMessages">
+						<dt><i class="fa fa-comments fa-fw Tooltip" title="Messages" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd><a href="search/member?user_id=10312" class="concealed" rel="nofollow">1,020</a></dd>
+					</dl>
+				
+				
+					<dl class="pairsJustified xbLikes">
+						<dt><i class="fa fa-thumbs-up fa-fw Tooltip" title="Likes Received" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd>2</dd>
+					</dl>
+				
+				
+				
+					<dl class="pairsJustified xbTrophyPoints">
+						<dt><i class="fa fa-trophy fa-fw Tooltip" title="Trophy Points" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd><a href="members/florawil.10312/trophies" class="OverlayTrigger concealed">38</a></dd>
+					</dl>
+				
+				
+				
+				</div>
+				
+			
+				
+					<dl class="pairsJustified xbJoinDate">
+						<dt><i class="fa fa-calendar fa-fw Tooltip" title="Joined" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd>Nov 4, 2004</dd>
+					</dl>
+				
+			
+				
+				
+				
+				
+				
+			
+				
+							
+						
+			
+			
+			
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				
+			
+			
+			
+		</div>
+	
+		
+
+
+	<span class="arrow"><span></span></span>
+</div>
+</div>
+
+	<div class="messageInfo primaryContent">		
+		
+		
+		
+		<div class="messageContent">
+			<article>
+				
+				
+				
+				<blockquote class="messageText SelectQuoteContainer ugc baseHtml">
+					
+					<b>关于网站已经被收录目录</b><br />
+<br />
+<b>关于网站已经被收录目录 </b><br />
+<ul>
+<li>我想改变网站的网址/标题/描述。我应该怎么做呢？</li>
+</ul>请见如下问题 “我发现目录中有一个网站出现错误。我应该如何报告它呢？”<ul>
+<li>我发现目录中有一个网站出现错误。我应该如何报告它呢？</li>
+</ul>如果想要提交一个更改网站的请求，请连接到该相关目录。点击页面右方的“更新网址”的链接。请认真阅读以及填写申请更新的具体网址/标题/描述，并确认填写的是否正确。<ul>
+<li>我的网站已经被列在ODP，但是在Google中无法找到。为什么呢？</li>
+</ul>首先需要澄清的事情是ODP不是Google，我们与其没有任何关系。Google是我们其中一个使用ODP目录的网站，这是他们的目录以及使用他们自己的搜索引擎。Google以及其他一些使用ODP数据的网站至于他们如何使用以及利用ODP数据这是完全不受ODP编辑员控制的。如果你对于Google有疑问，那么你需要与他们的工作人员联系。<ul>
+<li>我想将我的网站更换一个新域名 - 我如何将我的网站网址更新呢？</li>
+</ul>帮助我们也就是帮助你自己！将所有您的网站内容转移到新的域名网站。然后将您的域名设置为“域名已经更新”或给予提示“网站已经转移到...” - 这将帮助你的用户知道你的新域名，并证明了该网站只是被改变网址而不是被其他人所盗用。一旦你已经设置好了新域名，请来到相应的目录，点击页面右方的“更新网址”，并根据要求提出更新请求。<ul>
+<li>我想将我的网站转向一个不同的提供商，但是网址相同 - 我需要怎么做？</li>
+</ul>没什么可以做的。ODP将网址列在目录 - 如果你的网址还没有改变，那么你不需要做什么事情。<br />
+<br />
+以上部分内容来自 FAQ 的“关于网站已经被收录目录” - Questions about sites already listed in the directory 。
+					<div class="messageTextEndMarker">&nbsp;</div>
+				</blockquote>
+			</article>
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+			
+		
+	
+	
+				
+		<div class="messageMeta ToggleTriggerAnchor">
+			<div class="privateControls">
+				
+				
+				<div class="privateControlsDefault">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				</div>
+			<div class="privateControlsMenu">
+				
+			</div>
+			
+			</div>
+			
+			<div class="publicControls">
+				
+				
+				
+				
+				
+			</div>
+		</div>
+	
+		
+		
+		<div id="likes-post-236952"></div>
+	</div>
+
+	
+	
+	
+	
+	</div>
+	
+	
+	
+	
+</li>
+
+
+			
+		
+			
+				
+
+
+
+<li id="post-236953" class="message  staff threadStarter  " data-author="florawil">
+
+	<div class="messageHeading">
+		<span class="leftSide">
+			
+				<a href="t/39973/#post-236953" title="Permalink" class="datePermalink"><span class="DateTime" title="Dec 19, 2006 at 9:00 AM">Dec 19, 2006</span></a>
+			
+		</span>
+		
+		<span class="rightSide">
+			<a href="t/39973/#post-236953" title="Permalink" class="item muted postNumber hashPermalink OverlayTrigger" data-href="posts/236953/permalink">#4</a>
+	
+		</span>
+		
+	</div>
+
+
+	<div class="xbMessageHelper">
+	
+	
+
+<div class="messageUserInfo" itemscope="itemscope" itemtype="http://data-vocabulary.org/Person">
+<div class="messageUserBlock  xbOnlineAnimated">
+	
+		<div class="avatarHolder">
+			<span class="helper"><span></span></span>
+			<a href="members/florawil.10312/" class="avatar Av10312l" data-avatarhtml="true"><img src="data/avatars/l/10/10312.jpg?1393107064" width="192" height="192" alt="florawil" /></a>
+			
+			<!-- slot: message_user_info_avatar -->
+		</div>
+	
+
+
+	
+		<h3 class="userText">
+			<a href="members/florawil.10312/" class="username" itemprop="name"><span class="style6">florawil</span></a>
+			<em class="userTitle" itemprop="title">DMOZ Meta</em>
+			<em class="userBanner bannerRed wrapped" itemprop="title"><span class="before"></span><strong>Curlie Meta</strong><span class="after"></span></em>
+			<!-- slot: message_user_info_text -->
+		</h3>
+	
+		
+	
+		<div class="extraUserInfo xbBoxedFA">
+			
+				
+			
+				<div class="xbMainUserInfo">	
+				
+				
+					<dl class="pairsJustified xbMessages">
+						<dt><i class="fa fa-comments fa-fw Tooltip" title="Messages" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd><a href="search/member?user_id=10312" class="concealed" rel="nofollow">1,020</a></dd>
+					</dl>
+				
+				
+					<dl class="pairsJustified xbLikes">
+						<dt><i class="fa fa-thumbs-up fa-fw Tooltip" title="Likes Received" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd>2</dd>
+					</dl>
+				
+				
+				
+					<dl class="pairsJustified xbTrophyPoints">
+						<dt><i class="fa fa-trophy fa-fw Tooltip" title="Trophy Points" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd><a href="members/florawil.10312/trophies" class="OverlayTrigger concealed">38</a></dd>
+					</dl>
+				
+				
+				
+				</div>
+				
+			
+				
+					<dl class="pairsJustified xbJoinDate">
+						<dt><i class="fa fa-calendar fa-fw Tooltip" title="Joined" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd>Nov 4, 2004</dd>
+					</dl>
+				
+			
+				
+				
+				
+				
+				
+			
+				
+							
+						
+			
+			
+			
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				
+			
+			
+			
+		</div>
+	
+		
+
+
+	<span class="arrow"><span></span></span>
+</div>
+</div>
+
+	<div class="messageInfo primaryContent">		
+		
+		
+		
+		<div class="messageContent">
+			<article>
+				
+				
+				
+				<blockquote class="messageText SelectQuoteContainer ugc baseHtml">
+					
+					<b>申请成为编辑员</b><br />
+<br />
+<b>申请成为编辑员</b><ul>
+<li>我以前是一个编辑员，但是现在我旪法登陆。我应该怎么做？</li>
+</ul>如果一个编辑员连绪四个月没有做出任何编辑，那么编辑员帐号会被停檢，即使佪定期登陆。佪可以填写申请表檼来申请恢复权限。恢复权限申请通常是比较快速的，但有时也可能需要窉待凪周，这取决于其他工作负荷量。<br />
+<br />
+如果佪是一个编辑状态良好的编辑员，佪的帐号可能马上被恢复。如果佪的帐号曾经被取消或佪曾经做过糟糕或滥用目录的编辑而接受过誦告的，那么我们可能会决定不予恢复佪的帐号。在任何情况下，我们在恢复编辑员权限的时候会檹据具体情况来判斪。编辑员对于恢复权限问题有疑问，可以联系任何一个ODP职员或一个 meta 编辑员。<ul>
+<li>我忘记了我的编辑员密突。我应该怎么做？</li>
+</ul>请使用相关表檼 <a href="https://dmoztools.net/public/forgetpass/" target="_blank" class="externalLink ProxyLink" data-proxy-href="proxy.php?link=https%3A%2F%2Fdmoztools.net%2Fpublic%2Fforgetpass%2F&amp;hash=a3af257056ed98f2d37c9d530f98b9a0">https://dmoztools.net/public/forgetpass/</a><ul>
+<li>我忘记了我的编辑员帐号名媗。我应该怎么做？</li>
+</ul>请在论坛个简要解释一下佪所遇到的问题，但是请不要提供任何个人详细的信息。论坛的管理员/版主会给予回复和告诉佪如何做。请不要发个人矪信给其他编辑员。<br />
+<br />
+以上内容部分来自FAQ 的?申请成为编辑员? - Becoming an editor 。
+					<div class="messageTextEndMarker">&nbsp;</div>
+				</blockquote>
+			</article>
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+			
+		
+	
+	
+				
+		<div class="messageMeta ToggleTriggerAnchor">
+			<div class="privateControls">
+				
+				
+				<div class="privateControlsDefault">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				</div>
+			<div class="privateControlsMenu">
+				
+			</div>
+			
+			</div>
+			
+			<div class="publicControls">
+				
+				
+				
+				
+				
+			</div>
+		</div>
+	
+		
+		
+		<div id="likes-post-236953"></div>
+	</div>
+
+	
+	
+	
+	
+	</div>
+	
+	
+	
+	
+</li>
+
+
+			
+		
+			
+				
+
+
+
+<li id="post-236954" class="message  staff threadStarter  " data-author="florawil">
+
+	<div class="messageHeading">
+		<span class="leftSide">
+			
+				<a href="t/39973/#post-236954" title="Permalink" class="datePermalink"><span class="DateTime" title="Dec 25, 2006 at 7:15 AM">Dec 25, 2006</span></a>
+			
+		</span>
+		
+		<span class="rightSide">
+			<a href="t/39973/#post-236954" title="Permalink" class="item muted postNumber hashPermalink OverlayTrigger" data-href="posts/236954/permalink">#5</a>
+	
+		</span>
+		
+	</div>
+
+
+	<div class="xbMessageHelper">
+	
+	
+
+<div class="messageUserInfo" itemscope="itemscope" itemtype="http://data-vocabulary.org/Person">
+<div class="messageUserBlock  xbOnlineAnimated">
+	
+		<div class="avatarHolder">
+			<span class="helper"><span></span></span>
+			<a href="members/florawil.10312/" class="avatar Av10312l" data-avatarhtml="true"><img src="data/avatars/l/10/10312.jpg?1393107064" width="192" height="192" alt="florawil" /></a>
+			
+			<!-- slot: message_user_info_avatar -->
+		</div>
+	
+
+
+	
+		<h3 class="userText">
+			<a href="members/florawil.10312/" class="username" itemprop="name"><span class="style6">florawil</span></a>
+			<em class="userTitle" itemprop="title">DMOZ Meta</em>
+			<em class="userBanner bannerRed wrapped" itemprop="title"><span class="before"></span><strong>Curlie Meta</strong><span class="after"></span></em>
+			<!-- slot: message_user_info_text -->
+		</h3>
+	
+		
+	
+		<div class="extraUserInfo xbBoxedFA">
+			
+				
+			
+				<div class="xbMainUserInfo">	
+				
+				
+					<dl class="pairsJustified xbMessages">
+						<dt><i class="fa fa-comments fa-fw Tooltip" title="Messages" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd><a href="search/member?user_id=10312" class="concealed" rel="nofollow">1,020</a></dd>
+					</dl>
+				
+				
+					<dl class="pairsJustified xbLikes">
+						<dt><i class="fa fa-thumbs-up fa-fw Tooltip" title="Likes Received" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd>2</dd>
+					</dl>
+				
+				
+				
+					<dl class="pairsJustified xbTrophyPoints">
+						<dt><i class="fa fa-trophy fa-fw Tooltip" title="Trophy Points" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd><a href="members/florawil.10312/trophies" class="OverlayTrigger concealed">38</a></dd>
+					</dl>
+				
+				
+				
+				</div>
+				
+			
+				
+					<dl class="pairsJustified xbJoinDate">
+						<dt><i class="fa fa-calendar fa-fw Tooltip" title="Joined" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd>Nov 4, 2004</dd>
+					</dl>
+				
+			
+				
+				
+				
+				
+				
+			
+				
+							
+						
+			
+			
+			
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				
+			
+			
+			
+		</div>
+	
+		
+
+
+	<span class="arrow"><span></span></span>
+</div>
+</div>
+
+	<div class="messageInfo primaryContent">		
+		
+		
+		
+		<div class="messageContent">
+			<article>
+				
+				
+				
+				<blockquote class="messageText SelectQuoteContainer ugc baseHtml">
+					
+					<b>Resource-Zone </b><br />
+<ul>
+<li>为什么我们不能再询问网站是否被收录的情况？</li>
+</ul>因为我们在2005年5月决定暂停这样的询问回答。<br />
+<br />
+这是由一系列的因素导致我们做出此决定，但最大的原因恐怕是这些请求总是偏离论坛的宗旨。这个 论坛初衷是使公众对odp社区有一个更好的认识，让公众和dmoz编辑员直接进行交流，而某些情况下，提交网站状态请求 占了主导地位，而且几乎成为了焦点。<br />
+<br />
+根据反馈信息表明我们所提供的信息真正意义上实际没有给予很大的帮助。人们总是需要我们提供一 些我们无法轻 易给予或者是不能公开的信息。所以，尽管这里是一个交流平台，但网站提交状态查询请求已经达到 了一个无法想象的程度，这对于任何人来说将导致更多的失望。<br />
+<br />
+我们同时发现很多人忽视了“定量配给”的政策，这问题将变得更糟糕。一些编辑员花大量的时间在监控网站状态请求，而对于这些编辑员来说，他们原本的根本任务是要建立一个更好的odp，而不是监控在公众论坛的贴子。<br />
+<br />
+参与这个论坛讨论的一项odp编辑员之外的活动，所以参与的编辑员数量是经常变化的。不幸的是 ，这意味着当这里编辑员数量比较少的情况下，他们很自然的感到应该迫使去完成更多超出他们编辑任务之外的义务工作。<br />
+<ul>
+<li>如果我们不能询问我们的网站的收录情况，那么我们在这里可以讨论些什么呢？</li>
+</ul>我们欢迎提问关于ODP是如何运作的，如何改善目录或关于目录质量监控（无法打开的，改变内容，错误报告等等），关于如何成为编辑员，以及如何使用ODP数据等等除了关于你的网站收录状态的问题。如果你想发布一些具体的可能被滥用目录的情况，请填写<a href="https://dmoztools.net/public/abuse?lang=zh_CN&amp;cat=" target="_blank" class="externalLink ProxyLink" data-proxy-href="proxy.php?link=https%3A%2F%2Fdmoztools.net%2Fpublic%2Fabuse%3Flang%3Dzh_CN%26cat%3D&amp;hash=928acf56a07522301366b4c896adf43f">公众滥用目录报告</a>的表格，如果你想讨论一些内部编辑的问题，讨论如何优化自己的网站，或抱怨被开除，可以联系 staff<i>@</i>dmoz.org 询问具体的一些问题。 请在发贴前阅读我们的<a href="https://www.resource-zone.com/forum/help/Posting_Guidelines/" class="internalLink">发贴指南</a>，了解更多关于什么能发布什么不能发布的信息。<br />
+<br />
+注意： 我们提供一个会员专区，编辑员可以讨论一些非ODP的话题，但过于偏离ODP主旨的贴子将被管理员和版主关闭或删除，建议应该寻找更合适的论坛进行讨论。<br />
+<br />
+<b>RE: 关于改善/改变目录的一些建议：</b><br />
+请注意很多常见的改善目录的建议，很多人已经经过讨论。请建议能先进行搜索一下论坛，查询一下您的建议以前是否已经经过讨论。一些建议已经经过充分的讨论如是否ODP能够提供付费提交网站，编辑员滥用目录问题，加速网站审批速度，为提交者提供自动的工具查询网站审核状态等等。<br />
+<br />
+以上内容部分来自FAQ 的 Resource Zone  。
+					<div class="messageTextEndMarker">&nbsp;</div>
+				</blockquote>
+			</article>
+			
+			
+		</div>
+		
+		
+		
+			<div class="editDate">
+			
+				Last edited by a moderator: <span class="DateTime" title="Jan 11, 2015 at 12:48 PM">Jan 11, 2015</span>
+			
+			</div>
+		
+		
+		
+		
+		
+			
+		
+	
+	
+				
+		<div class="messageMeta ToggleTriggerAnchor">
+			<div class="privateControls">
+				
+				
+				<div class="privateControlsDefault">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				</div>
+			<div class="privateControlsMenu">
+				
+			</div>
+			
+			</div>
+			
+			<div class="publicControls">
+				
+				
+				
+				
+				
+			</div>
+		</div>
+	
+		
+		
+		<div id="likes-post-236954"></div>
+	</div>
+
+	
+	
+	
+	
+	</div>
+	
+	
+	
+	
+</li>
+
+
+			
+		
+			
+				
+
+
+
+<li id="post-236955" class="message  staff threadStarter  " data-author="florawil">
+
+	<div class="messageHeading">
+		<span class="leftSide">
+			
+				<a href="t/39973/#post-236955" title="Permalink" class="datePermalink"><span class="DateTime" title="Jan 26, 2007 at 9:26 AM">Jan 26, 2007</span></a>
+			
+		</span>
+		
+		<span class="rightSide">
+			<a href="t/39973/#post-236955" title="Permalink" class="item muted postNumber hashPermalink OverlayTrigger" data-href="posts/236955/permalink">#6</a>
+	
+		</span>
+		
+	</div>
+
+
+	<div class="xbMessageHelper">
+	
+	
+
+<div class="messageUserInfo" itemscope="itemscope" itemtype="http://data-vocabulary.org/Person">
+<div class="messageUserBlock  xbOnlineAnimated">
+	
+		<div class="avatarHolder">
+			<span class="helper"><span></span></span>
+			<a href="members/florawil.10312/" class="avatar Av10312l" data-avatarhtml="true"><img src="data/avatars/l/10/10312.jpg?1393107064" width="192" height="192" alt="florawil" /></a>
+			
+			<!-- slot: message_user_info_avatar -->
+		</div>
+	
+
+
+	
+		<h3 class="userText">
+			<a href="members/florawil.10312/" class="username" itemprop="name"><span class="style6">florawil</span></a>
+			<em class="userTitle" itemprop="title">DMOZ Meta</em>
+			<em class="userBanner bannerRed wrapped" itemprop="title"><span class="before"></span><strong>Curlie Meta</strong><span class="after"></span></em>
+			<!-- slot: message_user_info_text -->
+		</h3>
+	
+		
+	
+		<div class="extraUserInfo xbBoxedFA">
+			
+				
+			
+				<div class="xbMainUserInfo">	
+				
+				
+					<dl class="pairsJustified xbMessages">
+						<dt><i class="fa fa-comments fa-fw Tooltip" title="Messages" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd><a href="search/member?user_id=10312" class="concealed" rel="nofollow">1,020</a></dd>
+					</dl>
+				
+				
+					<dl class="pairsJustified xbLikes">
+						<dt><i class="fa fa-thumbs-up fa-fw Tooltip" title="Likes Received" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd>2</dd>
+					</dl>
+				
+				
+				
+					<dl class="pairsJustified xbTrophyPoints">
+						<dt><i class="fa fa-trophy fa-fw Tooltip" title="Trophy Points" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd><a href="members/florawil.10312/trophies" class="OverlayTrigger concealed">38</a></dd>
+					</dl>
+				
+				
+				
+				</div>
+				
+			
+				
+					<dl class="pairsJustified xbJoinDate">
+						<dt><i class="fa fa-calendar fa-fw Tooltip" title="Joined" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd>Nov 4, 2004</dd>
+					</dl>
+				
+			
+				
+				
+				
+				
+				
+			
+				
+							
+						
+			
+			
+			
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				
+			
+			
+			
+		</div>
+	
+		
+
+
+	<span class="arrow"><span></span></span>
+</div>
+</div>
+
+	<div class="messageInfo primaryContent">		
+		
+		
+		
+		<div class="messageContent">
+			<article>
+				
+				
+				
+				<blockquote class="messageText SelectQuoteContainer ugc baseHtml">
+					
+					<ul>
+<li>你们能否告诉编辑员审核我的网站？</li>
+</ul><br />
+时间取决于提交以及编辑员的审核，可以是两分钟也可以是两年。这取决于odp义务社区的本质 - 编辑员花他们大量义务的时间来建设目录。审核网站仅仅是许多编辑工作中的一部分，对于很多编辑员而言，这并不是首要任务。<br />
+网站提交到目录仅仅是odp网站收录的其中一个来源，我们鼓励编辑员自己需要合适的网站加入。<br />
+<br />
+<ul>
+<li>为何你们没有一个系统定期进行确认所有的提交网站是否被审核呢？</li>
+</ul>时间取决于提交与编辑员审核，可以是两分钟也可以是两年。这取决于odp义务社区的本质 - 编辑员花他们大量义务的时间来建设目录。审核网站仅仅是许多编辑工作中的一部分，对于很多编辑员而言，这并不是首要任务。<br />
+网站提交到目录仅仅是odp网站收录的其中一个来源，我们鼓励编辑员自己需要合适的网站加入。<br />
+<br />
+<ul>
+<li>x月太长了导致网站无法被审核 - 你们正在干什么呢？</li>
+</ul>时间取决于提交与编辑员审核，可以是两分钟也可以是两年。这取决于odp义务社区的本质 - 编辑员花他们大量义务的时间来建设目录。审核网站仅仅是许多编辑工作中的一部分，对于很多编辑员而言，这并不是首要任务。<br />
+网站提交到目录仅仅是odp网站收录的其中一个来源，我们鼓励编辑员自己需要合适的网站加入。
+					<div class="messageTextEndMarker">&nbsp;</div>
+				</blockquote>
+			</article>
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+			
+		
+	
+	
+				
+		<div class="messageMeta ToggleTriggerAnchor">
+			<div class="privateControls">
+				
+				
+				<div class="privateControlsDefault">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				</div>
+			<div class="privateControlsMenu">
+				
+			</div>
+			
+			</div>
+			
+			<div class="publicControls">
+				
+				
+				
+				
+				
+			</div>
+		</div>
+	
+		
+		
+		<div id="likes-post-236955"></div>
+	</div>
+
+	
+	
+	
+	
+	</div>
+	
+	
+	
+	
+</li>
+
+
+			
+		
+			
+				
+
+
+
+<li id="post-236956" class="message  staff threadStarter  " data-author="florawil">
+
+	<div class="messageHeading">
+		<span class="leftSide">
+			
+				<a href="t/39973/#post-236956" title="Permalink" class="datePermalink"><span class="DateTime" title="Jan 26, 2007 at 9:29 AM">Jan 26, 2007</span></a>
+			
+		</span>
+		
+		<span class="rightSide">
+			<a href="t/39973/#post-236956" title="Permalink" class="item muted postNumber hashPermalink OverlayTrigger" data-href="posts/236956/permalink">#7</a>
+	
+		</span>
+		
+	</div>
+
+
+	<div class="xbMessageHelper">
+	
+	
+
+<div class="messageUserInfo" itemscope="itemscope" itemtype="http://data-vocabulary.org/Person">
+<div class="messageUserBlock  xbOnlineAnimated">
+	
+		<div class="avatarHolder">
+			<span class="helper"><span></span></span>
+			<a href="members/florawil.10312/" class="avatar Av10312l" data-avatarhtml="true"><img src="data/avatars/l/10/10312.jpg?1393107064" width="192" height="192" alt="florawil" /></a>
+			
+			<!-- slot: message_user_info_avatar -->
+		</div>
+	
+
+
+	
+		<h3 class="userText">
+			<a href="members/florawil.10312/" class="username" itemprop="name"><span class="style6">florawil</span></a>
+			<em class="userTitle" itemprop="title">DMOZ Meta</em>
+			<em class="userBanner bannerRed wrapped" itemprop="title"><span class="before"></span><strong>Curlie Meta</strong><span class="after"></span></em>
+			<!-- slot: message_user_info_text -->
+		</h3>
+	
+		
+	
+		<div class="extraUserInfo xbBoxedFA">
+			
+				
+			
+				<div class="xbMainUserInfo">	
+				
+				
+					<dl class="pairsJustified xbMessages">
+						<dt><i class="fa fa-comments fa-fw Tooltip" title="Messages" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd><a href="search/member?user_id=10312" class="concealed" rel="nofollow">1,020</a></dd>
+					</dl>
+				
+				
+					<dl class="pairsJustified xbLikes">
+						<dt><i class="fa fa-thumbs-up fa-fw Tooltip" title="Likes Received" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd>2</dd>
+					</dl>
+				
+				
+				
+					<dl class="pairsJustified xbTrophyPoints">
+						<dt><i class="fa fa-trophy fa-fw Tooltip" title="Trophy Points" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd><a href="members/florawil.10312/trophies" class="OverlayTrigger concealed">38</a></dd>
+					</dl>
+				
+				
+				
+				</div>
+				
+			
+				
+					<dl class="pairsJustified xbJoinDate">
+						<dt><i class="fa fa-calendar fa-fw Tooltip" title="Joined" data-offsetX="-6" data-offsetY="0"></i></dt>
+						<dd>Nov 4, 2004</dd>
+					</dl>
+				
+			
+				
+				
+				
+				
+				
+			
+				
+							
+						
+			
+			
+			
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				
+			
+			
+			
+		</div>
+	
+		
+
+
+	<span class="arrow"><span></span></span>
+</div>
+</div>
+
+	<div class="messageInfo primaryContent">		
+		
+		
+		
+		<div class="messageContent">
+			<article>
+				
+				
+				
+				<blockquote class="messageText SelectQuoteContainer ugc baseHtml">
+					
+					<ul>
+<li>我发现目录中有一个网站出现错误。我应该如何报告它呢？网站能自动进行更新吗？</li>
+</ul>不：与很多其他建议一样，编辑员会审核它。编辑员审核通过的网站需要符合odp编辑指南，并且能够从网站本身找到有价值的地方。请注意一般来说一些带有宣传推广的描述会被马上拒绝，所以请提交符合odp编辑指南的标题与描述。<br />
+<br />
+<ul>
+<li>我发现目录中有一个网站出现错误。我应该如何报告它呢？如果这是与我相关的网站，这有关系吗？</li>
+</ul>不，当然没有。我们感谢您让我们知道任何不合适收录的网站。但作为站长你应该确保您的网站与描述符合要求。
+					<div class="messageTextEndMarker">&nbsp;</div>
+				</blockquote>
+			</article>
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+			
+		
+	
+	
+				
+		<div class="messageMeta ToggleTriggerAnchor">
+			<div class="privateControls">
+				
+				
+				<div class="privateControlsDefault">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				</div>
+			<div class="privateControlsMenu">
+				
+			</div>
+			
+			</div>
+			
+			<div class="publicControls">
+				
+				
+				
+				
+				
+			</div>
+		</div>
+	
+		
+		
+		<div id="likes-post-236956"></div>
+	</div>
+
+	
+	
+	
+	
+	</div>
+	
+	
+	
+	
+</li>
+
+
+			
+		
+		
+	</ol>
+
+	
+
+	<input type="hidden" name="_xfToken" value="" />
+
+</form>
+
+	<div class="pageNavLinkGroup">
+			
+				
+				</div>
+			
+			<div class="linkGroup" style="display: none"><a href="javascript:" class="muted JsOnly DisplayIgnoredContent Tooltip" title="Show hidden content by ">Show Ignored Content</a></div>
+
+			
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<dl class="threadAlerts secondaryContent">
+			<dt>Thread Status:</dt>
+			
+				
+	
+				
+					<dd class="lockedAlert">
+						<span class="icon Tooltip" title="Locked" data-tipclass="iconTip"><i class="fa fa-lock fa-fw"></i></span>
+							Not open for further replies.</dd>
+				
+			
+		</dl>
+	
+
+
+
+	
+
+	<div class="sharePage">
+		<h3 class="textHeading larger">Share This Page</h3>
+		
+			
+			
+				<div class="tweet shareControl">
+					<a href="https://twitter.com/share" class="twitter-share-button"
+						data-count="horizontal"
+						data-lang="en-US"
+						data-url="https://www.resource-zone.com/forum/t/39973/"
+						data-text="Important - 常见问题解答以及如何成为一名编辑员"
+						data-via="CurlieCrew"
+						data-related="DMOZ">Tweet</a>
+				</div>
+			
+			
+				<div class="plusone shareControl">
+					<div class="g-plusone" data-size="medium" data-count="true" data-href="https://www.resource-zone.com/forum/t/39973/"></div>
+				</div>
+			
+			
+				<div class="facebookLike shareControl">
+					
+					<div class="fb-like" data-href="https://www.resource-zone.com/forum/t/39973/" data-width="400" data-layout="standard" data-action="recommend" data-show-faces="true" data-colorscheme="light"></div>
+				</div>
+			
+			
+		
+	</div>
+
+						
+						
+						
+						
+							<!-- login form, to be moved to the upper drop-down -->
+							
+
+
+
+
+
+
+
+
+<form action="login/login" method="post" class="xenForm " id="login" style="display:none">
+
+	
+
+	<div class="ctrlWrapper">
+		<dl class="ctrlUnit">
+			<dt><label for="LoginControl">Your name or email address:</label></dt>
+			<dd><input type="text" name="login" id="LoginControl" class="textCtrl" tabindex="101" /></dd>
+		</dl>
+	
+	
+		<dl class="ctrlUnit">
+			<dt>
+				<label for="ctrl_password">Do you already have an account?</label>
+			</dt>
+			<dd>
+				<ul>
+					<li><label for="ctrl_not_registered"><input type="radio" name="register" value="1" id="ctrl_not_registered" tabindex="105" />
+						No, create an account now.</label></li>
+					<li><label for="ctrl_registered"><input type="radio" name="register" value="0" id="ctrl_registered" tabindex="105" checked="checked" class="Disabler" />
+						Yes, my password is:</label></li>
+					<li id="ctrl_registered_Disabler">
+						<input type="password" name="password" class="textCtrl" id="ctrl_password" tabindex="102" />
+						<div class="lostPassword"><a href="lost-password/" class="OverlayTrigger OverlayCloser" tabindex="106">Forgot your password?</a></div>
+					</li>
+				</ul>
+			</dd>
+		</dl>
+	
+		
+		<dl class="ctrlUnit submitUnit">
+			<dt></dt>
+			<dd>
+				<input type="submit" class="button primary" value="Log in" tabindex="104" data-loginPhrase="Log in" data-signupPhrase="Sign up" />
+				<label for="ctrl_remember" class="rememberPassword"><input type="checkbox" name="remember" value="1" id="ctrl_remember" tabindex="103" /> Stay logged in</label>
+			</dd>
+		</dl>
+	</div>
+
+	<input type="hidden" name="cookie_check" value="1" />
+	<input type="hidden" name="redirect" value="/forum/t/39973/" />
+	<input type="hidden" name="_xfToken" value="" />
+
+</form>
+						
+						
+						
+						
+					
+						
+			
+			
+						
+			<div class="breadBoxBottom">
+
+<nav>
+	
+
+	<fieldset class="breadcrumb">
+		
+		<a href="misc/quick-navigation-menu?selected=node-32" class="OverlayTrigger jumpMenuTrigger" data-cacheOverlay="true" title="Open quick navigation"><i class="fa fa-sitemap"></i><!--Jump to...--></a> 
+			
+		<div class="boardTitle"><strong>Resource-Zone</strong></div>
+		
+		<span class="crumbs">
+			
+				<span class="crust homeCrumb">
+					<a href="https://www.resource-zone.com" class="crumb"><span><i class="fa fa-home fa-fw"></i> <span class="xbHiddenText">Home</span></span></a>
+					<span class="arrow"><span></span></span>
+				</span>
+			
+			
+			
+				<span class="crust selectedTabCrumb">
+					<a href="https://www.resource-zone.com/forum/" class="crumb"><span>Forums</span></a>
+					<span class="arrow"><span>&gt;</span></span>
+				</span>
+			
+			
+			
+				
+					<span class="crust">
+						<a href="https://www.resource-zone.com/forum/#world.20" class="crumb"><span>World</span></a>
+						<span class="arrow"><span>&gt;</span></span>
+					</span>
+				
+					<span class="crust">
+						<a href="https://www.resource-zone.com/forum/f/chinese.32/" class="crumb"><span>Chinese</span></a>
+						<span class="arrow"><span>&gt;</span></span>
+					</span>
+				
+			
+		</span>
+	</fieldset>
+</nav></div>
+			
+			
+			
+			
+			
+				
+<div class="xbScrollButtons" style="display:none;">
+	<div class="xbScrollUpButton" id="xb_ScrollUp"><i class="fa fa-chevron-up"></i></div>
+	<div class="xbScrollDownButton" id="xb_ScrollDown"><i class="fa fa-chevron-down"></i></div>
+</div>
+			
+			
+			
+		</div>
+	</div>
+	
+</div>
+
+</div>
+
+<footer>
+	
+
+
+<div class="footer">
+	<div class="pageWidth">
+		<div class="pageContent">
+			<dl class="choosers">
+			
+				
+				
+				
+					<dt>Language</dt>
+					<dd><a href="misc/language?redirect=%2Fforum%2Ft%2F39973%2F" class="OverlayTrigger Tooltip" title="Language Chooser" rel="nofollow"><span>English (US)</span> <i class="fa fa-globe fa-fw"></i></a></dd>
+				
+							
+			</dl>
+			
+			
+			<ul class="footerLinks">
+			
+				
+					<li><a href="misc/contact" class="OverlayTrigger" data-overlayOptions="{&quot;fixed&quot;:false}"><i class="fa fa-envelope-o fa-fw"></i> <span>Contact Us</span></a></li>
+				
+				<li><a href="help/"><i class="fa fa-life-ring fa-fw"></i> <span>Help</span></a></li>
+				<li><a href="https://www.resource-zone.com" class="homeLink"><i class="fa fa-home fa-fw"></i> <span>Home</span></a></li>
+				
+			
+				<li><a href="help/terms"><i class="fa fa-gavel fa-fw"></i> <span>Terms and Rules</span></a></li>
+				
+			
+				<li><a href="f/-/index.rss" rel="alternate" class="globalFeed" target="_blank"
+					title="RSS feed for Resource-Zone"><i class="fa fa-rss fa-fw"></i></a></li>
+			
+			</ul>
+			
+			<span class="helper"></span>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="footerLegal">
+	<div class="pageWidth">
+		<div class="pageContent">		
+			<div id="copyright"><a href="https://xenforo.com" class="concealed">Forum software by XenForo&trade; <span>&copy;2010-2017 XenForo Ltd.</span></a>  <div id="thCopyrightNotice">Some XenForo functionality crafted by <a href="http://xf.themehouse.com/" title="Premium XenForo Add-ons" target="_blank">ThemeHouse</a>.</div> </div>
+			
+			
+			
+			<span class="helper"></span>
+		</div>
+	</div>	
+</div>
+
+</footer>
+
+
+
+
+
+
+<div class="xbOffCanvasContent xbOffCanvasMask"></div>
+<div class="xbOffCanvas slideLeft publicTabs">
+	<ul class="xbOffCanvasList">
+		
+		
+		<!-- home -->
+		
+			<li class="navTab home"><a href="https://www.resource-zone.com" class="navLink">Home</a></li>
+		
+		
+		<!-- extra tabs: home -->
+		
+		
+		
+		<!-- forums -->
+		
+			<li class="navTab forums selected">
+				<a href="https://www.resource-zone.com/forum/" class="navLink">Forums</a>
+					<div class="xbOffCanvasSubMenu">
+					<ul>
+					
+						
+						<li><a href="search/?type=post">Search Forums</a></li>
+						
+						<li><a href="find-new/posts" rel="nofollow">Recent Posts</a></li>
+					
+					</ul>
+					</div>
+			</li>
+		
+		
+		
+		<!-- extra tabs: middle -->
+		
+		
+		
+		<!-- members -->
+		
+			<li class="navTab members ">
+				<a href="https://www.resource-zone.com/forum/members/" class="navLink">Members</a>
+					<div class="xbOffCanvasSubMenu">
+					<ul>
+					
+						<li><a href="members/">Notable Members</a></li>
+						<li><a href="members/list">Registered Members</a></li>
+						<li><a href="online/">Current Visitors</a></li>
+						<li><a href="recent-activity/">Recent Activity</a></li>
+						
+					
+					</ul>
+					</div>
+			</li>
+						
+
+		<!-- extra tabs: end -->
+		
+
+		
+
+		<li class="navTab xbOffCanvasExtraLink">		
+	<a href="search/" rel="Menu" class="navLink NoPopupGadget"><i class="fa fa-search"></i> Search</a>
+</li>
+
+
+	</ul>
+</div>
+
+
+
+</div>
+
+
+<script>
+
+
+jQuery.extend(true, XenForo,
+{
+	visitor: { user_id: 0 },
+	serverTimeInfo:
+	{
+		now: 1511253120,
+		today: 1511244000,
+		todayDow: 2
+	},
+	_lightBoxUniversal: "0",
+	_enableOverlays: "1",
+	_animationSpeedMultiplier: "1",
+	_overlayConfig:
+	{
+		top: "10%",
+		speed: 200,
+		closeSpeed: 100,
+		mask:
+		{
+			color: "rgb(45, 45, 45)",
+			opacity: "0.6",
+			loadSpeed: 200,
+			closeSpeed: 100
+		}
+	},
+	_ignoredUsers: [],
+	_loadedScripts: {"nat_public_css":true,"thread_view":true,"message":true,"bb_code":true,"xb_message":true,"message_user_info":true,"share_page":true,"xb":true,"login_bar":true,"xb_top_bar":true,"xb_social_links":true,"xb_scroll_buttons":true},
+	_cookieConfig: { path: "/", domain: "", prefix: "xf_"},
+	_csrfToken: "",
+	_csrfRefreshUrl: "login/csrf-token-refresh",
+	_jsVersion: "3b45212c",
+	_noRtnProtect: false,
+	_noSocialLogin: false
+});
+jQuery.extend(XenForo.phrases,
+{
+	cancel: "Cancel",
+
+	a_moment_ago:    "A moment ago",
+	one_minute_ago:  "1 minute ago",
+	x_minutes_ago:   "%minutes% minutes ago",
+	today_at_x:      "Today at %time%",
+	yesterday_at_x:  "Yesterday at %time%",
+	day_x_at_time_y: "%day% at %time%",
+
+	day0: "Sunday",
+	day1: "Monday",
+	day2: "Tuesday",
+	day3: "Wednesday",
+	day4: "Thursday",
+	day5: "Friday",
+	day6: "Saturday",
+
+	_months: "January,February,March,April,May,June,July,August,September,October,November,December",
+	_daysShort: "Sun,Mon,Tue,Wed,Thu,Fri,Sat",
+
+	following_error_occurred: "The following error occurred",
+	server_did_not_respond_in_time_try_again: "The server did not respond in time. Please try again.",
+	logging_in: "Logging in",
+	click_image_show_full_size_version: "Click this image to show the full-size version.",
+	show_hidden_content_by_x: "Show hidden content by {names}"
+});
+
+// Facebook Javascript SDK
+XenForo.Facebook.appId = "";
+XenForo.Facebook.forceInit = true;
+
+
+</script>
+
+
+<script>
+$(window).scroll(function() { // when the page is scrolled run this
+    if($(this).scrollTop() != 0) { // if you're NOT at the top
+        $('.xbScrollButtons').fadeIn("slow"); // fade in
+    } else { // else
+        $('.xbScrollButtons').fadeOut("slow"); // fade out
+    }
+});
+
+$(function() {
+    // the element inside of which we want to scroll
+        var $elem = $('#content');
+ 
+        // show the buttons
+  
+        // clicking the "down" button will make the page scroll to the $elem's height
+    $('#xb_ScrollDown').click(
+        function (e) {
+            $('html, body').animate({scrollTop: $elem.height()}, 700);
+        }
+    );
+        // clicking the "up" button will make the page scroll to the top of the page
+    $('#xb_ScrollUp').click(
+        function (e) {
+            $('html, body').animate({scrollTop: '0px'}, 700);
+        }
+    );
+ });
+ 
+ (function(){
+    
+    var special = jQuery.event.special,
+        uid1 = 'D' + (+new Date()),
+        uid2 = 'D' + (+new Date() + 1);
+        
+    special.scrollstart = {
+        setup: function() {
+            
+            var timer,
+                handler =  function(evt) {
+                    
+                    var _self = this,
+                        _args = arguments;
+                    
+                    if (timer) {
+                        clearTimeout(timer);
+                    } else {
+                        evt.type = 'scrollstart';
+                        jQuery.event.handle.apply(_self, _args);
+                    }
+                    
+                    timer = setTimeout( function(){
+                        timer = null;
+                    }, special.scrollstop.latency);
+                    
+                };
+            
+            jQuery(this).bind('scroll', handler).data(uid1, handler);
+            
+        },
+        teardown: function(){
+            jQuery(this).unbind( 'scroll', jQuery(this).data(uid1) );
+        }
+    };
+    
+    special.scrollstop = {
+        latency: 300,
+        setup: function() {
+            
+            var timer,
+                    handler = function(evt) {
+                    
+                    var _self = this,
+                        _args = arguments;
+                    
+                    if (timer) {
+                        clearTimeout(timer);
+                    }
+                    
+                    timer = setTimeout( function(){
+                        
+                        timer = null;
+                        evt.type = 'scrollstop';
+                        jQuery.event.handle.apply(_self, _args);
+                        
+                    }, special.scrollstop.latency);
+                    
+                };
+            
+            jQuery(this).bind('scroll', handler).data(uid2, handler);
+            
+        },
+        teardown: function() {
+            jQuery(this).unbind( 'scroll', jQuery(this).data(uid2) );
+        }
+    };
+    
+})();
+</script>
+
+
+
+
+
+
+
+
+
+<!--XenBase Current Version : 1.5.12 -->
+<!--Style Version : 1.5.12 -->
+
+
+
+
+</body>
+</html>

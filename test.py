@@ -1,9 +1,10 @@
-import sys
-sys.setrecursionlimit(10000)
-def iterator1(n):
-    if n <= 1:
-        return 1
+def hanoi(level, _from, _pass, _to):
+    if level == 1:
+        print(_from + "->" + _to)
     else:
-        return n * iterator1(n - 1)
+        hanoi(level - 1, _from, _to, _pass)
+        print(_from + "->" + _to)
+        hanoi(level - 1, _pass, _from, _to)
 
-print(iterator1(3000))
+
+hanoi(10, "A", "B", "C")
