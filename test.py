@@ -1,3 +1,9 @@
-row_num = int(input('输入行数：'))
-for row in range(1, row_num + 1):
-    print(' ' * (row_num + 1 - row), ' *' * row)
+import sys
+sys.setrecursionlimit(10000)
+def iterator1(n):
+    if n <= 1:
+        return 1
+    else:
+        return n * iterator1(n - 1)
+
+print(iterator1(3000))
