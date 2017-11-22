@@ -2821,7 +2821,7 @@ jQuery.extend(true, XenForo,
 	visitor: { user_id: 0 },
 	serverTimeInfo:
 	{
-		now: 1511253120,
+		now: 1511316796,
 		today: 1511244000,
 		todayDow: 2
 	},
