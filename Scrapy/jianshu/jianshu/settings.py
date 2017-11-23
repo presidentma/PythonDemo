@@ -68,7 +68,9 @@ ROBOTSTXT_OBEY = True
 #ITEM_PIPELINES = {
 #    'jianshu.pipelines.JianshuPipeline': 300,
 #}
-
+ITEM_PIPELINES = {
+    'jianshu.pipelines.JianshuPipeline': 300,
+}
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
