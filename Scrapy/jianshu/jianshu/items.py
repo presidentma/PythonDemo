@@ -18,3 +18,4 @@ class JianshuItem(scrapy.Item):
     read_number = scrapy.Field()
     comment_number = scrapy.Field()
     collect_number = scrapy.Field()
+    item_url = scrapy.Field()

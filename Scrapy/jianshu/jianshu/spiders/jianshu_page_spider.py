@@ -1,5 +1,8 @@
 from scrapy.spider import Spider
 from jianshu.items import JianshuItem
+import re
+from deal_funcs import DealFunction
+
 
 class JianshuSpider(Spider):
     name = 'jianshu'
@@ -12,5 +15,17 @@ class JianshuSpider(Spider):
         item = JianshuItem()
         articles = res.xpath('//ul[@class="note-list"]/li')
         for index,article in enumerate(articles):
-            item['author'] = article.xpath('//div[@class="info"]/a[1]/text()').extract()
-            print(item['author'][index])
+            item['author'] = article.xpath('.//div[@class="info"]/a[1]/text()').extract()[0]
+            item['title'] = article.xpath('.//div[@class="content"]/a[1]/text()').extract()[0]
+            item['abstract'] = article.xpath('normalize-space(.//p[@class="abstract"]/text())').extract()[0]
+            pulish_time = article.xpath('.//div[@class="info"]//span/@data-shared-at').extract()[0]
+            item_url = article.xpath('.//div[@class="content"]/a/@href').extract()[0]
+            item['item_url'] = 'http://www.jianshu.com/' + str(item_url)
+            read_number = article.xpath('.//div[@class="meta"]/a[1]/text()').extract()[1]
+            comment_number = article.xpath('.//div[@class="meta"]/a[2]/text()').extract()[1]
+            collect_number = article.xpath('.//div[@class="meta"]/span/text()').extract()[0]
+            item['pulish_time'] = DealFunction.format_time(pulish_time)
+            item['comment_number'] = re.sub(r'\s+','',read_number)
+            item['read_number'] = re.sub(r'\s+','',read_number)
+            item['collect_number'] = re.sub(r'\s+','',collect_number)
+        print(item)
