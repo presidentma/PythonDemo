@@ -27,4 +27,4 @@ class JianshuSpider(Spider):
             item['comment_number'] = re.sub(r'\s+','',read_number)
             item['read_number'] = re.sub(r'\s+','',read_number)
             item['collect_number'] = re.sub(r'\s+','',collect_number)
-        print(item)
+            yield item
