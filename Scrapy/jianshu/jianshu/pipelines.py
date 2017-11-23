@@ -21,7 +21,7 @@ class JianshuPipeline(object):
         db_connect=connection()
         cursor=db_connect.cursor()
         cursor.execute('USE jianshu')
-        sql = 'INSERT INTO articals(author,title,pulish_time,abstract,read_number,comment_number,collect_number,item_url)VALUS(%s,%s,%s,%s,%s,%s,%s,%s)'
+        sql = 'INSERT INTO articles(author,title,pulish_time,abstract,read_number,comment_number,collect_number,item_url)VALUS(%s,%s,%s,%s,%s,%s,%s,%s)'
         try:
             cursor.execute(sql,(item['author'],item['title'],item['pulish_time'],item['abstract'],item['read_number'],item['comment_number'],item['collect_number'],item['item_url']))
         except expression as e:
