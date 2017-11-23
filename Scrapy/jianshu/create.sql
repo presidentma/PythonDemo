@@ -1,2 +1,2 @@
 CREATE DATABASE IF NOT EXISTS `jianshu` DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
-CREATE TABLE IF NOT EXISTS `articles`(id BIGINT(5) NOT NULL AUTO_INCREMENT,author VARCHAR(100),title VARCHAR(100),pulish_time VARCHAR(100),abstract VARCHAR(255),read_number VARCHAR(10),comment_number VARCHAR(10),collect_number VARCHAR(10),item_url VARCHAR(20),PRIMARY KEY(id),INDEX name(`author`));
+CREATE TABLE IF NOT EXISTS `article_lists`(id BIGINT(5) NOT NULL AUTO_INCREMENT,author VARCHAR(100),title VARCHAR(100),pulish_time VARCHAR(100),abstract VARCHAR(255),read_number VARCHAR(10),comment_number VARCHAR(10),collect_number VARCHAR(10),item_url VARCHAR(50),PRIMARY KEY(id),INDEX name(`author`));
