@@ -1,8 +1,7 @@
 from scrapy.spider import Spider
 from jianshu.items import JianshuItem
 import re
-from deal_funcs import DealFunction
-
+from jianshu.deal_funcs import DealFunction
 
 class JianshuSpider(Spider):
     name = 'jianshu'
@@ -24,7 +23,7 @@ class JianshuSpider(Spider):
             read_number = article.xpath('.//div[@class="meta"]/a[1]/text()').extract()[1]
             comment_number = article.xpath('.//div[@class="meta"]/a[2]/text()').extract()[1]
             collect_number = article.xpath('.//div[@class="meta"]/span/text()').extract()[0]
-            item['pulish_time'] = DealFunction.format_time(pulish_time)
+            item['pulish_time'] = DealFunction().format_time(pulish_time)
             item['comment_number'] = re.sub(r'\s+','',read_number)
             item['read_number'] = re.sub(r'\s+','',read_number)
             item['collect_number'] = re.sub(r'\s+','',collect_number)
